@@ -1,0 +1,35 @@
+.timer{
+	width: 600px;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+}
+
+.items{
+	padding: 17px 24px;
+	display: inline-block;
+	margin: 0 4px 0 9px;
+	-webkit-border-radius:11.3px;
+	-moz-border-radius: 11.3px;
+	border-radius: 11.3px;
+	background: #2b2e35;
+	color: white; 
+	font-family: "PT Sans", sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	min-width: 30px;
+	letter-spacing: 2px;
+}
+
+.timer__period-block{
+	float: left;
+}
+
+.timer:after{
+	visibility: hidden;	
+	display: block;	
+	font-size: 0;	
+	content: " ";	
+	clear: both;	
+	height: 0; 
+}
