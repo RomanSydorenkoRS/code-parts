@@ -1,0 +1,42 @@
+/* castom checkbox*/
+.checkbox-block{
+	display: block;
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+}
+
+/* hidden old stile checkbox*/
+.old-stile{
+	display: none;
+}
+
+/* style for checkbox-area*/
+.checkbox-area{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	border: 1px #ccc solid;
+	border-radius: 10%;
+	position: relative;
+}
+
+/* style for checkbox-trigger*/
+.checkbox-area:before{
+	content: "";
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	bottom: 1%;
+	left: 1%;
+	border-radius: 10%;
+	background: #0f0;
+	transform: scale(0);
+	transition: .4s;
+}
+
+/* wisibel checkbox-trigger*/
+.old-stile:checked+.checkbox-area:before{
+	transform: scale(1);
+}
